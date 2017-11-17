@@ -1,16 +1,4 @@
 <h2>My Bros</h2>
-<div *ngIf="selectedBro">
-  
-   <h2>{{ selectedBro.name | uppercase }} Details</h2>
-   <div><span>id: </span>{{selectedBro.id}}</div>
-   <div>
-     <label>name:
-       <input [(ngModel)]="selectedBro.name" placeholder="name">
-     </label>
-   </div>
-  
- </div>
-
 <ul class="bros">
   <li *ngFor="let bro of bros"
     [class.selected]="bro === selectedBro"
@@ -18,4 +6,5 @@
     <span class="badge">{{bro.id}}</span> {{bro.name}}
   </li>
 </ul>
+<app-bro-detail [bro]="selectedBro"></app-bro-detail>
  

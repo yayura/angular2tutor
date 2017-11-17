@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrosComponent } from './bros/bros.component';
+import { BroDetailComponent } from './bro-detail/bro-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BrosComponent
+    BrosComponent,
+    BroDetailComponent
   ],
   imports: [
     BrowserModule,
